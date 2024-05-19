@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - offices
+id: offices_save_action
+label: 'Save officess'
+type: offices
+plugin: entity:save_action:offices
+configuration: {  }

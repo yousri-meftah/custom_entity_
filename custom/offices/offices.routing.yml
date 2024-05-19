@@ -1,0 +1,7 @@
+entity.offices.settings:
+  path: 'admin/structure/offices'
+  defaults:
+    _form: '\Drupal\offices\Form\OfficesSettingsForm'
+    _title: 'offices'
+  requirements:
+    _permission: 'administer offices'

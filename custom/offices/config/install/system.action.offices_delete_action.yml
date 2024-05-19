@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - offices
+id: offices_delete_action
+label: 'Delete officess'
+type: offices
+plugin: entity:delete_action:offices
+configuration: {  }

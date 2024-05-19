@@ -1,0 +1,10 @@
+entity.offices.edit_form:
+  route_name: entity.offices.edit_form
+  group: offices
+  title: 'Edit'
+
+entity.offices.delete_form:
+  route_name: entity.offices.delete_form
+  group: offices
+  title: 'Delete'
+  weight: 10

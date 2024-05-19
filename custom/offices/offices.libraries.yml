@@ -1,0 +1,7 @@
+filter:
+  version: 1.x
+  js:
+    js/filter.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

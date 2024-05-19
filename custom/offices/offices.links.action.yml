@@ -1,0 +1,5 @@
+offices.add_form:
+  title: 'Add offices'
+  route_name: entity.offices.add_form
+  appears_on:
+    - entity.offices.collection

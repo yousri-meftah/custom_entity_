@@ -1,0 +1,11 @@
+administer offices:
+  title: 'Administer officess'
+  restrict access: true
+view offices:
+  title: 'View offices'
+edit offices:
+  title: 'Edit offices'
+delete offices:
+  title: 'Delete offices'
+create offices:
+  title: 'Create offices'

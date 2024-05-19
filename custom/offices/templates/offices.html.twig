@@ -1,0 +1,48 @@
+<div class="country-buttons">
+  {% for country in countries %}
+    <button class="country-button" onclick="showOffices('{{ country }}')">{{ country }}</button>
+  {% endfor %}
+</div>
+
+<div id="office-list"></div>
+
+<script>
+  var officesByCountry = {{ offices_by_country|json_encode|raw }};
+
+  function showOffices(country) {
+    var officeList = document.getElementById('office-list');
+    officeList.innerHTML = ''; // Clear the current list
+
+    if (officesByCountry[country]) {
+      officesByCountry[country].forEach(function(office) {
+        var officeItem = document.createElement('div');
+        officeItem.className = 'office-item';
+
+        var officeName = document.createElement('h2');
+        officeName.className = 'office-name';
+        officeName.textContent = 'Name: ' + office.name;
+
+        var officeAddress = document.createElement('p');
+        officeAddress.className = 'office-address';
+        officeAddress.textContent = 'Address: ' + office.address;
+
+        var officePhone = document.createElement('p');
+        officePhone.className = 'office-phone';
+        officePhone.textContent = 'Phone: ' + office.phone;
+
+        var officeEmail = document.createElement('p');
+        officeEmail.className = 'office-email';
+        officeEmail.textContent = 'Email: ' + office.email;
+
+        officeItem.appendChild(officeName);
+        officeItem.appendChild(officeAddress);
+        officeItem.appendChild(officePhone);
+        officeItem.appendChild(officeEmail);
+
+        officeList.appendChild(officeItem);
+      });
+    } else {
+      officeList.innerHTML = '<p>No offices found for the selected country.</p>';
+    }
+  }
+</script>

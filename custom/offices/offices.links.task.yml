@@ -1,0 +1,22 @@
+entity.offices.settings:
+  title: 'Settings'
+  route_name: entity.offices.settings
+  base_route: entity.offices.settings
+entity.offices.view:
+  title: 'View'
+  route_name: entity.offices.canonical
+  base_route: entity.offices.canonical
+entity.offices.edit_form:
+  title: 'Edit'
+  route_name: entity.offices.edit_form
+  base_route: entity.offices.canonical
+entity.offices.delete_form:
+  title: 'Delete'
+  route_name: entity.offices.delete_form
+  base_route: entity.offices.canonical
+  weight: 10
+entity.offices.collection:
+  title: 'officess'
+  route_name: entity.offices.collection
+  base_route: system.admin_content
+  weight: 10

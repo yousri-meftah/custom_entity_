@@ -1,0 +1,11 @@
+entity.offices.settings:
+  title: 'offices'
+  description: 'Configure an offices entity type.'
+  route_name:  entity.offices.settings
+  parent: system.admin_structure
+
+entity.offices.collection:
+  title: 'officess'
+  description: 'List of officess.'
+  route_name: entity.offices.collection
+  parent: system.admin_content
